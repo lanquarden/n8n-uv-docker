@@ -22,7 +22,7 @@ docker run -p 5678:5678 ghcr.io/lanquarden/n8n-uv:<version>
 To build the Docker image locally:
 
 ```bash
-docker buildx -t n8n-uv --build-arg VERSION=<version> .
+docker buildx build -t n8n-uv --build-arg VERSION=<version> .
 ```
 
 ## Publishing to GitHub Container Registry
